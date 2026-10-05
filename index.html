@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Storefront — Local businesses worth supporting</title>
+  <meta name="description" content="A neighborhood directory of independent restaurants, trades, makers and shops — with real reviews for the businesses review sites forgot.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231D1B18'/%3E%3Cpath d='M8 13l1.8-5h12.4L24 13v11H8z' fill='none' stroke='%23FAF8F4' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#/" aria-label="Storefront home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-word">Storefront</span>
+      </a>
+
+      <form class="header-search" id="header-search" role="search">
+        <label class="visually-hidden" for="q">Search businesses</label>
+        <span class="search-icon" data-icon="search"></span>
+        <input id="q" name="q" type="search" placeholder="Search bakeries, plumbers, woodworkers…" autocomplete="off">
+        <label class="visually-hidden" for="header-area">Area</label>
+        <select id="header-area" class="area-select"></select>
+      </form>
+
+      <nav class="header-nav" aria-label="Primary">
+        <a href="#/browse" class="nav-link">Browse</a>
+        <a href="#/saved" class="nav-link saved-link"><span data-icon="heart"></span><span>Saved</span><span class="saved-count" id="saved-count" hidden></span></a>
+        <a href="#/join" class="btn btn-ink btn-sm"><span class="hide-sm">List your business</span><span class="show-sm">Get listed</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/icons.js"></script>
+  <script src="data/taxonomy.js"></script>
+  <script src="data/food-retail.js"></script>
+  <script src="data/services.js"></script>
+  <script src="data/makers.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
